@@ -1,0 +1,8 @@
+1. 将dma_test目录放到linux-riscv/samples/下
+2. 在dts中添加dma-test的设备节点，并完善里面的信息
+dmatest@xx {
+        reg = <0x00 xx 0x00 xx>;
+        iommus = <xx xx>;
+        compatible = "dma-test";
+        dma-noncoherent;
+};
